@@ -69,63 +69,12 @@ Then open the notebooks and choose the **Python (marketfusion)** kernel.
 
 ---
 
-## 🗃️ Data notes
-
-- Keep cached CSV/PKL files in a `data/` folder (or update paths accordingly).
-- Avoid committing sensitive or large files. If you must version large datasets, consider **Git LFS**.
-- If you store keys, use a `.env` file and load environment variables in code; never commit secrets.
-
----
-
-## 📦 Repository hygiene
-
-Create a `.gitignore` that excludes typical notebook and data artifacts, for example:
-```
-# notebooks & caches
-.ipynb_checkpoints/
-*.ipynb_convert/
-
-# environments & secrets
-.venv/
-.env
-*.env
-
-# data dumps
-data/
-*.csv
-*.pkl
-*.parquet
-
-# OS/editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-```
-
-> Adjust rules if you want to keep small sample CSVs (e.g., put samples in `examples/` and ignore the rest). For truly large binaries, track with **Git LFS**.
-
----
-
-## 🔒 License & usage
-
-If you want this repo to be **publicly viewable but not reusable**, do **not** add an open‑source license. Add a short **All Rights Reserved** notice (e.g., `LICENSE.txt`) stating that copying, modifying, or redistributing requires written permission.
-
----
-
 ## ⚠️ Research caveats
 
 - **Past performance** does not predict future results.
 - **Backtests** are susceptible to **overfitting** and **data snooping** when many variants are tried.
 - **Paper trading** results often diverge from live execution due to latency, slippage, and market impact.
 - Treat outputs as **exploration**, not investment advice.
-
----
-
-## 🏷️ Suggested topics
-
-`quant-research` · `news-analytics` · `mutual-funds` · `value-investing` · `jupyter` · `python`
-
 ---
 
 ## 🙌 Credits
